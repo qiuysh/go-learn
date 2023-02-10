@@ -2,9 +2,8 @@ package main
 
 import (
 	"fmt"
-	"react-system/config"
-	"react-system/router"
-	"react-system/middleware"
+	"go-learn/config"
+	"go-learn/router"
 
 	"github.com/gin-gonic/gin"
 )

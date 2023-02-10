@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"react-system/config"
+	"go-learn/config"
 
 	"github.com/dgrijalva/jwt-go"
 )

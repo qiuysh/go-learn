@@ -1,18 +1,9 @@
 package middleware
 
-import (
-	"fmt"
-	"time"
-
-	"react-system/config"
-
-	"github.com/dgrijalva/jwt-go"
-)
-
+import "github.com/gin-gonic/gin"
 
 func Authorized() gin.HandlerFunc {
-	return func (c *gin.Context)  {
+	return func(c *gin.Context) {
 		var authToken = c.Responese.Header("")
 	}
 }
-

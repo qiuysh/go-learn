@@ -1,7 +1,7 @@
 package router
 
 import (
-	"react-system/controller"
+	"go-learn/controller"
 
 	"github.com/gin-gonic/gin"
 )

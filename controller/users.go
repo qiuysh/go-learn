@@ -1,9 +1,9 @@
 package controller
 
 import (
+	"go-learn/config"
+	"go-learn/enity"
 	"net/http"
-	"react-system/config"
-	"react-system/enity"
 
 	"github.com/gin-gonic/gin"
 )

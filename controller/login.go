@@ -2,10 +2,10 @@ package controller
 
 import (
 	"fmt"
+	"go-learn/config"
+	"go-learn/enity"
+	"go-learn/utils"
 	"net/http"
-	"react-system/config"
-	"react-system/enity"
-	"react-system/utils"
 
 	"github.com/gin-gonic/gin"
 )
