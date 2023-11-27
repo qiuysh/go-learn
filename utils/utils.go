@@ -3,10 +3,9 @@ package utils
 import (
 	"fmt"
 	"time"
-
 	"go-learn/config"
-
 	"github.com/dgrijalva/jwt-go"
+	"golang.org/x/crypto/bcrypt"
 )
 
 type User struct {
@@ -50,4 +49,22 @@ func ParseToken(tokenString string) (User, error) {
 	})
 
 	return *claimsUser.User, err
+}
+
+func GetFromPwd(pwd string) string {
+	hash, err := bcrypt.GenerateFromPassword([]byte(pwd), bcrypt.DefaultCost)
+	if err != nil {
+		fmt.Println("加密失败")
+		return ""
+	}
+	return string(hash)
+}
+
+
+func ComparePwd(hash string, pwd string) bool {
+ err := bcrypt.CompareHashAndPassword([]byte(hash), []byte(pwd))
+ if err == nil {
+   return true
+ }
+ return false
 }

@@ -1,4 +1,4 @@
-package enity
+package utils
 
 type Result struct {
 	// Code    int         `json:"code"`
